@@ -1,0 +1,258 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StartupX - Innovate Your Future</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #eee;
+      background-color: #000;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: #111;
+      color: #f00;
+      padding: 1rem 0;
+      animation: fadeInDown 1s ease;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    nav a {
+      color: #f00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #000, #400000);
+      color: #f00;
+      text-align: center;
+      padding: 4rem 1rem;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #f00;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #ff3333;
+    }
+
+    .features {
+      padding: 3rem 1rem;
+      background: #111;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #f00;
+    }
+
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .feature {
+      flex: 1 1 30%;
+      background: #222;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+      color: #eee;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #f00;
+    }
+
+    .testimonials {
+      background: #1a1a1a;
+      padding: 3rem 1rem;
+    }
+
+    .testimonials h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #f00;
+    }
+
+    .testimonial-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .testimonial {
+      flex: 1 1 45%;
+      background: #222;
+      padding: 1rem;
+      border-left: 5px solid #f00;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(255,0,0,0.2);
+      color: #eee;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    footer {
+      background: #000;
+      color: #f00;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .feature-grid,
+      .testimonial-grid {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-rocket"></i> StartupX</h1>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Innovate Your Future</h2>
+      <p>Empowering startups with cutting-edge tech solutions.</p>
+      <a href="#features" class="btn">Explore Features</a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Integration</h3>
+          <p>Seamless access to cloud services for scalability.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-brain"></i>
+          <h3>AI Analytics</h3>
+          <p>Smart insights to drive data-driven decisions.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Secure Platform</h3>
+          <p>Built with top-tier security protocols.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>"StartupX transformed our workflow. Highly recommended!"</p>
+          <span>- Alex, CEO of TechNova</span>
+        </div>
+        <div class="testimonial">
+          <p>"The AI tools helped us scale faster than ever."</p>
+          <span>- Priya, Founder of GreenByte</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2025 StartupX. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
